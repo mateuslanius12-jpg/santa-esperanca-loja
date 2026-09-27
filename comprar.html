@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Comprar | Santa Esperança</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        SANTA ESPERANÇA
+
+        <span>ROLEPLAY</span>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a href="index.html#vips">
+            VIPs
+        </a>
+
+        <a href="ids.html">
+            IDs
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="section">
+
+    <p class="mini-title">
+        COMPRA
+    </p>
+
+    <h2>
+        Finalizar compra
+    </h2>
+
+
+    <div class="vip-card">
+
+        <h3>
+            Escolha seu VIP
+        </h3>
+
+
+        <label>
+            VIP
+        </label>
+
+        <select id="vip">
+
+            <option value="20.90">
+                VIP Bronze — R$ 20,90
+            </option>
+
+            <option value="40.90">
+                VIP Prata — R$ 40,90
+            </option>
+
+            <option value="65.90">
+                VIP Ouro — R$ 65,90
+            </option>
+
+            <option value="105.90">
+                VIP Diamante — R$ 105,90
+            </option>
+
+        </select>
+
+
+        <label>
+            ID da cidade
+        </label>
+
+        <input
+            type="text"
+            id="id"
+            placeholder="Digite seu ID">
+
+
+        <label>
+            Discord
+        </label>
+
+        <input
+            type="text"
+            id="discord"
+            placeholder="Seu Discord">
+
+
+        <button
+            class="buy-button"
+            onclick="comprar()">
+
+            Continuar
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<script>
+
+function comprar() {
+
+    let id =
+        document.getElementById("id").value;
+
+    let discord =
+        document.getElementById("discord").value;
+
+
+    if (id === "" || discord === "") {
+
+        alert("Preencha seu ID e Discord.");
+
+        return;
+
+    }
+
+
+    alert(
+        "Pedido criado!\\n\\n" +
+        "ID: " + id +
+        "\\nDiscord: " + discord
+    );
+
+}
+
+</script>
+
+</body>
+
+  </html>
