@@ -458,3 +458,25 @@ footer {
     }
 
   }
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 13px;
+
+    border-radius: 7px;
+
+    background: #ff8a00;
+    color: #111;
+
+    font-weight: bold;
+    text-align: center;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background: #ff9f2f;
+}
